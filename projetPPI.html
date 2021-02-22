@@ -15,4 +15,51 @@ au travers des nombreuses spécialités. " </p>
 présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront."</p>
 <img src="https://static.lexpress.fr/medias_11199/w_2048,h_1146,c_crop,x_0,y_72/w_2000,h_1125,c_fill,g_north/v1477667942/une-fois-le-corps-evacue-les-proches-se-retrouvent-souvent-seuls-face-au-nettoyage_5733917.jpg">
 
+<p id="trace" style="display: none">"expert en empreinte"</p>
+<p id="ADN" style="display:none"> "expert en analyse ADN" </p>
+<p id="véhicule" style="display:none"> "expert véhicule" </p>
+<p id="signal" style="display:none"> "expert en signal sonore et traitement d'image" </p>
+<p id="numérique" style="display:none"> "expert numérique" </p>
+<p id="balle" style="display:none"> "expert ballistique" </p>
+<p id="manuscrit" style="display:none"> "expert manuscrit" </p>
+<p id="toxico" style="display:none"> "expert en toxicologie" </p>
+
+<canvas id="canvtrace" width="200" height="100" onclick="myFunction()" onmouseover="myFunction2()" onmouseout="myFunction3()" style="border:none;">
+<canvas id="canvADN" width="200" height="100" onclick="myFunction()" onmouseover="myFunction2()" onmouseout="myFunction3()" style="border:none;">
+	<script>
+		//afficher les informations sur les experts en empreinte
+function affichertrace() {
+  if (document.getElementById("trace").style.display == "block") {
+      document.getElementById("trace").style.display = "none";
+  }
+  else {
+      document.getElementById("trace").style.display = "block";
+  }
+}
+function myFunction2() {
+  document.getElementById("canvtrace").style.border = "1px solid black";
+}
+function myFunction3() {
+  document.getElementById("canvtrace").style.border = "none";
+}
+
+//afficher informations expert ADN
+function afficheradn() {
+  if (document.getElementById("ADN").style.display == "block") {
+      document.getElementById("ADN").style.display = "none";
+  }
+  else {
+      document.getElementById("ADN").style.display = "block";
+  }
+}
+function myFunction2() {
+  document.getElementById("canvADN").style.border = "1px solid black";
+}
+function myFunction3() {
+  document.getElementById("canvADN").style.border = "none";
+}
+
+//afficher informations experts véhicule 
+</script>
+
 </body>  
