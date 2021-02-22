@@ -1,169 +1,110 @@
 <html>
 	<head> 
-		<title>"Présentation de la police scientifique et de ses différentes spécialités" 
-</title> 
-</head> 
+		<title>"Présentation de la police scientifique et de ses différentes spécialités" </title> 
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head> 
 
 	<body> 
-<h1 id="titre-principal"> "Les différentes spécialités de la police scientifique" </h1> 
+		<h1 id="titre-principal"> "Les différentes spécialités de la police scientifique" </h1> 
 
-<p id=introduction> "La police scientifique est une branche de la gendarmerie et de la police nationale composée de scientifiques. 
-Leur objectif est d'aider les enquêteurs dans leurs affaires en analysant les preuves laissées sur les scènes de crimes." </p>
-<p id="objectif-du-site"> "Ce site a pour objectif de vous faire découvrir les différentes activités de cette profession 
-au travers des nombreuses spécialités. " </p> 
-<p id="présentation-concept"> Une scène de crime est représentée sur l'image ci-dessous. C'est à vous de repérer les différents indices 
-présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront."</p>
- 
+		<p id=introduction> "La police scientifique est une branche de la gendarmerie et de la police nationale composée de scientifiques. 
+		Leur objectif est d'aider les enquêteurs dans leurs affaires en analysant les preuves laissées sur les scènes de crimes." </p>
+		<p id="objectif-du-site"> "Ce site a pour objectif de vous faire découvrir les différentes activités de cette profession 
+		au travers des nombreuses spécialités. " </p> 
+		<p id="présentation-concept"> Une scène de crime est représentée sur l'image ci-dessous. C'est à vous de repérer les différents indices 
+		présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront."</p>
+		 
 
-<p id="trace" style="display: none">"expert en empreinte"</p>
-<p id="ADN" style="display:none"> "expert en analyse ADN" </p>
-<p id="véhicule" style="display:none"> "expert véhicule" </p>
-<p id="signal" style="display:none"> "expert en signal sonore et traitement d'image" </p>
-<p id="numérique" style="display:none"> "expert numérique" </p>
-<p id="balle" style="display:none"> "expert ballistique" </p>
-<p id="manuscrit" style="display:none"> "expert manuscrit" </p>
-<p id="toxico" style="display:none"> "expert en toxicologie" </p>
+		<p id="véhicule" style="display:none"> "expert véhicule" </p>
+		<p id="signal" style="display:none"> "expert en signal sonore et traitement d'image" </p>
+		<p id="numérique" style="display:none"> "expert numérique" </p>
+		<p id="balle" style="display:none"> "expert ballistique" </p>
+		<p id="manuscrit" style="display:none"> "expert manuscrit" </p>
+		<p id="toxico" style="display:none"> "expert en toxicologie" </p>
 
-<canvas id="canvtrace" width="200" height="100" onclick="affichertrace()" onmouseover="affichertrace2()" onmouseout="affichertrace3()" style="border:none;"></canvas>
-<canvas id="canvADN" width="200" height="100" onclick="afficheradn()" onmouseover="afficheradn2()" onmouseout="afficheradn3()" style="border:none;"></canvas>
-<canvas id="canvvehicule" width="200" height="100" onclick="affichervehicule()" onmouseover="affichervehicule2()" onmouseout="affichervehicule3()" style="border:none;"></canvas>
-<canvas id="canvsignal" width="200" height="100" onclick="affichersignal()" onmouseover="affichersignal2()" onmouseout="affichersignal3()" style="border:none;"></canvas>
-<canvas id="canvnum" width="200" height="100" onclick="affichernumerique()" onmouseover="affichernumerique2()" onmouseout="affichernumerique3()" style="border:none;"></canvas>
-<canvas id="canvman" width="200" height="100" onclick="affichermanuscrit()" onmouseover="affichermanuscrit2()" onmouseout="affichermanuscrit3()" style="border:none;"></canvas>
-<canvas id="canvballe" width="200" height="100" onclick="afficherballe()" onmouseover="afficherballe2()" onmouseout="afficherballe3()" style="border:none;"></canvas>
-<canvas id="canvtoxico" width="200" height="100" onclick="affichertoxico()" onmouseover="affichertoxico2()" onmouseout="affichertoxico3()" style="border:none;"></canvas>
+		<canvas id="canvtrace" width="200" height="100" onclick="affichertrace()" onmouseover="affichertrace2()" onmouseout="affichertrace3()" style="border:none;"></canvas>
+		<canvas id="canvADN" width="200" height="100" onclick="afficheradn()" onmouseover="afficheradn2()" onmouseout="afficheradn3()" style="border:none;"></canvas>
+		<canvas id="canvvehicule" width="200" height="100" onclick="affichervehicule()" onmouseover="affichervehicule2()" onmouseout="affichervehicule3()" style="border:none;"></canvas>
+		<canvas id="canvsignal" width="200" height="100" onclick="affichersignal()" onmouseover="affichersignal2()" onmouseout="affichersignal3()" style="border:none;"></canvas>
+		<canvas id="canvnum" width="200" height="100" onclick="affichernumerique()" onmouseover="affichernumerique2()" onmouseout="affichernumerique3()" style="border:none;"></canvas>
+		<canvas id="canvman" width="200" height="100" onclick="affichermanuscrit()" onmouseover="affichermanuscrit2()" onmouseout="affichermanuscrit3()" style="border:none;"></canvas>
+		<canvas id="canvballe" width="200" height="100" onclick="afficherballe()" onmouseover="afficherballe2()" onmouseout="afficherballe3()" style="border:none;"></canvas>
+		<canvas id="canvtoxico" width="200" height="100" onclick="affichertoxico()" onmouseover="affichertoxico2()" onmouseout="affichertoxico3()" style="border:none;"></canvas>
+
+		<div id="trace" width="500" height="500"> 
+			<p>
+				<strong>1.	Expert en empreinte (biologie génétique)</strong>
+				<br> <em>a.	Types de traces </em>
+				<br>
+				<br>	La trace est la marque, visible ou invisible, laissée par les crêtes papillaires sur un support. Lorsqu’un malfaiteur manipule un objet sur les lieux d’un délit ou d’un crime, il peut laisser des traces digitales (doigts) ou palmaires (paumes).
+				<br>
+				<br> i.	Traces visibles 
+				<br> Ces traces visibles à l’œil nu sont qualifiées de positives s’il s’agit d’un dépôt de matière ou négative s’il s’agit d’un enlèvement de matière (dans la poussière par exemple).  Ces traces sont photographiées sous des éclairages adaptés. 
+				<br>
+				<br>ii	Traces invisibles 
+				<br>Ceci est le résultat d’un dépôt de composés présents dans les crêtes papillaires (sueur par exemple). Dans la plupart des cas il faut utiliser une méthode d’identification spécifique que nous allons détailler dans la partie ….. « mettre un lien »
+				<br>
+				<br>iii.	Traces moulues 
+				<br>Ceux sont des traces en 3 dimensions visibles à l’œil nu (une trace dans de la cire de bougie par exemple). Leur révélation se fait par moulage. 
+				<br>
+				<br>
+				<br><em>b.	Empreintes </em>
+				<br>
+				<br>	L’empreinte est le résultat de l’apposition complète des crêtes papillaires après encrage de celles-ci. Les empreintes d’un délinquant sont prélevées lors des opérations de signalisation effectuées dans les locaux de police.
+				<br>
+				<br>i.	Composition des traces papillaires et origine des différentes sécrétions
+				<br>Le derme (95% de la composition de la peau) est elle-même composée de 5 millions de glandes sécrétrices. Ces dernières sont à l’origine de la sueurs et autres dépôts qui forment les traces digitales. Les trois glandes sécrétrices principales sont :
+				<br>-les glandes eccrines qui produisent une grande majorité d’eau mais aussi des composés organiques et inorganiques (sodium, acide lactique). 
+				<br>-les glandes sébacées qui sécrètent en majorité du sébum qui est lui-même composé d’une grande variété de composés organiques (acide gras, cholestérol). 
+				<br>-les glandes apocrines dont la composition est encore mal définie car contaminée par les deux glandes précédentes.  
+				<br>
+				<br><em>c.	Procédés révélation </em>
+				<br>
+				<br>Le choix des différents procédés que nous allons présenter dépend de plusieurs paramètres tel que l’ancienneté de la trace, le type, l’état du support…. 
+				<br>•	L’épiscopie coaxiale est une méthode optique non destructrice. Elle consiste en mettre en évidence les contrastes de réflexions de la traces avec le support. En effet la trace est le support n’ont pas le même type de réflexion. Le support émet une réflexion spéculaire. Ce type de réflexion émet un faisceau de lumière unique sombre alors que la trace émet une réflexion diffusive soit plusieurs faisceau clairs.  Ainsi ce procédé est utilisé avec des surfaces lisses et réfléchissantes (miroir par exemple). 
+				« schéma ou photo de la trace où on voit le clair et le foncé ». 
+				<br>•	Les vapeurs de cyanoacrylates est un procédé de surface lisse est sèche. En premier lieu nous obtenons des vapeurs à partir d’ester de cyanoacrylates (une image ? ) qui ensuite forme un solide blanc. Ainsi la trace peut apparaître. Cette technique est très largement utilisée car bon marché, sensible et facile. 
+				<br>•	La suspension de microparticules est une méthode très puissante car elle permet de mettre en évidence des traces sur des surfaces qui ont été mouillés ou passés sous l’eau. Il s’agit de saupoudrer la zone avec une poudre qui réagit avec les composés insolubles dans l’eau (ce qui est le cas de nombreux composés sécrétés par les glandes capillaires).  Cependant cette méthode est destructrice (perte des traces) et montre une efficacité limité. 
+				<br>•	La poudre colorée est une méthode encore une fois très largement employée car facile et bon marché. Il existe différents types de poudres (luminescentes, de différentes couleurs) qui réagit cette fois ci avec l’eau, très largement sécrétée par les traces papillaires.  Cette méthode est par ailleurs limitante car fonctionnel avec un nombre de surface très limité et non compatible avec une recherche d’ADN ultérieure. 
+				<br>•	Il existe encore de nombreuses techniques tel que le bain de ninhydrine, le révélateur physique ou encore les vapeurs d’iode.  
+			</p>
+		</div>
+
+		<div id="ADN" width="500" height="500" 
+		style="background-color:white;
+		    position: absolute; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;"> 
+		    <p> <strong>	2. Expert ADN (département biologique génétique)</strong> 
+	L’étude de l’ADN est cruciale dans la résolution de nombreuses affaires criminelles car elle permet de dresser un profil génétique et ainsi d’identifier les acteurs dans une affaires policières de façon précise, fiable et rapide. L’avantage avec l’ADN est qu’il est présent partout : dans le sperme, les cheveux, la peau… Il est donc facile de laisser son ADN sur une scène de crime. La police scientifique doit donc trouver ces indices pour ensuite l’analyser à l’aide de différentes étapes qui sont détaillées dans les parties suivantes. (lien)
+		PCR 
+	La découverte de ce procédé par Kary Mullis (lien page wikipedia ?) a très largement révolutionné le monde de la génétique et par la même occasion a permis de résoudre de nombreuses affaires criminelles. Cette technique permet la multiplication en grande quantité d’une petite fraction d’ADN. (est ce que j’explique la méthode ? ). 
+	Par ailleurs la principale difficulté à contourner pour cette méthode est d’éviter toute forme de contamination de l’ADN. C’est pourquoi les techniciens de police scientifiques qui effectuent les prélèvements doivent porter une blouse de protection pour éviter toute contamination. Aujourd’hui encore, de nombreux projets sont menés pour tenter de pallier à ce problème. 
+		Electrophorèse 
+	L’électrophorèse est la dernière étape de l’analyse est permet de séparer les molécules en fonction de leur taille en appliquant un champ électrique. Cette méthode est utile dans l’analyse de l’ADN du fait que cette dernière est chargée négativement et va donc interagir avec le champ électrique.  Plus la taille de la molécule d’ADN est petite plus elle migre vite. A la fin de cette méthode nous pouvons donc obtenir un profil génétique qui permet l’identification d’un individus. 
+		Multiplex 
+	Cette méthode permet l’analyse de plusieurs STR (Short Tandem Repeat soit des courtes séquences d’ADN répétées) simultanément.  Ainsi cela revient à faire la même application que précédemment mais sur plusieurs STR en même temps. 
+		Identification ADN 
+	Une fois le profil obtenu il faut pouvoir comparer ce dernier avec une trace.  Pour se faire il faut procéder à une méthode de calcul basée sur les statistiques. Par ailleurs même si les deux profils concordent on ne peut procéder à une identification formelle. En effet le profil d’ADN obtenu peut être partagé par une partie de la population. Il faut donc étudier la fréquence du profil d’ADN obtenu au sein de la population (chiffres répertoriés et régulièrement mis à jours par différents centre de recherches). Si un profil a une faible fréquence, nous serons plus aptes à valider l’identification. 
+	Le théorème utilisé pour l’approche statistique est l’approche Bayésienne.  Ce calcul dépend des indices matériels recueillis mais aussi l’information analytique de l’expert et des informations recueillis au court de l’enquête. Le calcul est le suivant : 
+	P(H_p/I)/P(H_d/I) *P(〖E/(H_P,I)〗_ )/P(E/H_d ,I) =P(H_P/(E,I))/P(H_d/(E,I)) .  
+	I : informations générales sur l’affaire (circonstances)
+	E : évidences (concordances entre une trace et le matériel de comparaison)
+	HP : hypothèse selon la quelle le suspect est à l’origine de la trace d’ADN
+	Hd : hypothèse selon laquelle une tiers personne est à l’origine de la trace d’ADN
+	Pour plus d’informations sur ce calcul vous pouvez cliquer ici. </p>
+
+	</div> 
 
 
+			<script>
 
-	<script>
-		//afficher les informations sur les experts en empreinte
-function affichertrace() {
-  if (document.getElementById("trace").style.display == "block") {
-      document.getElementById("trace").style.display = "none";
-  }
-  else {
-      document.getElementById("trace").style.display = "block";
-  }
-}
-function affichertrace2() {
-  document.getElementById("canvtrace").style.border = "1px solid black";
-}
-function affichertrace3() {
-  document.getElementById("canvtrace").style.border = "none";
-}
 
-//afficher informations expert ADN
-function afficheradn() {
-  if (document.getElementById("ADN").style.display == "block") {
-      document.getElementById("ADN").style.display = "none";
-  }
-  else {
-      document.getElementById("ADN").style.display = "block";
-  }
-}
-function afficheradn2() {
-  document.getElementById("canvADN").style.border = "1px solid black";
-}
-function afficheradn3() {
-  document.getElementById("canvADN").style.border = "none";
-}
-
-//afficher informations experts véhicule  
-function affichervehicule() {
-  if (document.getElementById("véhicule").style.display == "block") {
-      document.getElementById("véhicule").style.display = "none";
-  }
-  else {
-      document.getElementById("véhicule").style.display = "block";
-  }
-}
-function affichervehicule2() {
-  document.getElementById("canvvehicule").style.border = "1px solid black";
-}
-function affichervehicule3() {
-  document.getElementById("canvvehicule").style.border = "none";
-}
-
-//afficher informations experts signal
-function affichersignal() {
-  if (document.getElementById("signal").style.display == "block") {
-      document.getElementById("signal").style.display = "none";
-  }
-  else {
-      document.getElementById("signal").style.display = "block";
-  }
-}
-function affichersignal2() {
-  document.getElementById("canvsignal").style.border = "1px solid black";
-}
-function affichersignal3() {
-  document.getElementById("canvsignal").style.border = "none";
-}
-
-//afficher informations experts numérique
-function affichernumerique() {
-  if (document.getElementById("numérique").style.display == "block") {
-      document.getElementById("numérique").style.display = "none";
-  }
-  else {
-      document.getElementById("numérique").style.display = "block";
-  }
-}
-function affichernumerique2() {
-  document.getElementById("canvnum").style.border = "1px solid black";
-}
-function affichernumerique3() {
-  document.getElementById("canvnum").style.border = "none";
-}
-
-//afficher informations experts manuscrit 
-function affichermanuscrit() {
-  if (document.getElementById("manuscrit").style.display == "block") {
-      document.getElementById("manuscrit").style.display = "none";
-  }
-  else {
-      document.getElementById("manuscrit").style.display = "block";
-  }
-}
-function affichermanuscrit2() {
-  document.getElementById("canvman").style.border = "1px solid black";
-}
-function affichermanuscrit3() {
-  document.getElementById("canvman").style.border = "none";
-}
-
-//afficher informations experts ballistique 
-function afficherballe() {
-  if (document.getElementById("ballistique").style.display == "block") {
-      document.getElementById("ballistique").style.display = "none";
-  }
-  else {
-      document.getElementById("ballistique").style.display = "block";
-  }
-}
-function afficherballe2() {
-  document.getElementById("canvballe").style.border = "1px solid black";
-}
-function afficherballe3() {
-  document.getElementById("canvballe").style.border = "none";
-}
-
-//afficher informations experts toxicologie 
-function affichertoxico() {
-  if (document.getElementById("toxicologie").style.display == "block") {
-      document.getElementById("toxicologie").style.display = "none";
-  }
-  else {
-      document.getElementById("toxicologie").style.display = "block";
-  }
-}
-function afficherballe2() {
-  document.getElementById("canvtoxico").style.border = "1px solid black";
-}
-function afficherballe3() {
-  document.getElementById("canvtoxico").style.border = "none";
-}
-
-</script>
-
-</body>  
+		</script>
+	</body>  
+</html>

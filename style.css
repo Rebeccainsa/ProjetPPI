@@ -1,0 +1,11 @@
+#trace 
+{
+	background-color: white;
+    position: absolute; 
+    top: 15%; left: 15%;
+    width: 70%;
+    height: 70%;
+    opacity: 0.8;
+    display: none;
+    overflow:auto;
+}
