@@ -29,6 +29,9 @@ présents. Cliquez dessus et différentes fenêtres avec une présentation pour 
 <canvas id="canvvehicule" width="200" height="100" onclick="affichervehicule()" onmouseover="affichervehicule2()" onmouseout="affichervehicule3()" style="border:none;"></canvas>
 <canvas id="canvsignal" width="200" height="100" onclick="affichersignal()" onmouseover="affichersignal2()" onmouseout="affichersignal3()" style="border:none;"></canvas>
 <canvas id="canvnum" width="200" height="100" onclick="affichernumerique()" onmouseover="affichernumerique2()" onmouseout="affichernumerique3()" style="border:none;"></canvas>
+<canvas id="canvman" width="200" height="100" onclick="affichermanuscrit()" onmouseover="affichermanuscrit2()" onmouseout="affichermanuscrit3()" style="border:none;"></canvas>
+<canvas id="canvballe" width="200" height="100" onclick="afficherballe()" onmouseover="afficherballe2()" onmouseout="afficherballe3()" style="border:none;"></canvas>
+<canvas id="canvtoxico" width="200" height="100" onclick="affichertoxico()" onmouseover="affichertoxico2()" onmouseout="affichertoxico3()" style="border:none;"></canvas>
 
 
 
@@ -111,6 +114,54 @@ function affichernumerique2() {
 }
 function affichernumerique3() {
   document.getElementById("canvnum").style.border = "none";
+}
+
+//afficher informations experts manuscrit 
+function affichermanuscrit() {
+  if (document.getElementById("manuscrit").style.display == "block") {
+      document.getElementById("manuscrit").style.display = "none";
+  }
+  else {
+      document.getElementById("manuscrit").style.display = "block";
+  }
+}
+function affichermanuscrit2() {
+  document.getElementById("canvman").style.border = "1px solid black";
+}
+function affichermanuscrit3() {
+  document.getElementById("canvman").style.border = "none";
+}
+
+//afficher informations experts ballistique 
+function afficherballe() {
+  if (document.getElementById("ballistique").style.display == "block") {
+      document.getElementById("ballistique").style.display = "none";
+  }
+  else {
+      document.getElementById("ballistique").style.display = "block";
+  }
+}
+function afficherballe2() {
+  document.getElementById("canvballe").style.border = "1px solid black";
+}
+function afficherballe3() {
+  document.getElementById("canvballe").style.border = "none";
+}
+
+//afficher informations experts toxicologie 
+function affichertoxico() {
+  if (document.getElementById("toxicologie").style.display == "block") {
+      document.getElementById("toxicologie").style.display = "none";
+  }
+  else {
+      document.getElementById("toxicologie").style.display = "block";
+  }
+}
+function afficherballe2() {
+  document.getElementById("canvtoxico").style.border = "1px solid black";
+}
+function afficherballe3() {
+  document.getElementById("canvtoxico").style.border = "none";
 }
 
 </script>
