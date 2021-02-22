@@ -13,7 +13,7 @@ Leur objectif est d'aider les enquêteurs dans leurs affaires en analysant les p
 au travers des nombreuses spécialités. " </p> 
 <p id="présentation-concept"> Une scène de crime est représentée sur l'image ci-dessous. C'est à vous de repérer les différents indices 
 présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront."</p>
-<img src="https://static.lexpress.fr/medias_11199/w_2048,h_1146,c_crop,x_0,y_72/w_2000,h_1125,c_fill,g_north/v1477667942/une-fois-le-corps-evacue-les-proches-se-retrouvent-souvent-seuls-face-au-nettoyage_5733917.jpg">
+// <img src="https://static.lexpress.fr/medias_11199/w_2048,h_1146,c_crop,x_0,y_72/w_2000,h_1125,c_fill,g_north/v1477667942/une-fois-le-corps-evacue-les-proches-se-retrouvent-souvent-seuls-face-au-nettoyage_5733917.jpg">
 
 <p id="trace" style="display: none">"expert en empreinte"</p>
 <p id="ADN" style="display:none"> "expert en analyse ADN" </p>
@@ -28,6 +28,7 @@ présents. Cliquez dessus et différentes fenêtres avec une présentation pour 
 <canvas id="canvADN" width="200" height="100" onclick="afficheradn()" onmouseover="afficheradn2()" onmouseout="afficheradn3()" style="border:none;">
 <canvas id="canvvehicule" width="200" height="100" onclick="affichervehicule()" onmouseover="affichervehicule2()" onmouseout="affichervehicule3()" style="border:none;">
 <canvas id="canvsignal" width="200" height="100" onclick="affichersignal()" onmouseover="affichersignal2()" onmouseout="affichersignal3()" style="border:none;">
+<canvas id="canvnum" width="200" height="100" onclick="affichernumerique()" onmouseover="affichernumerique2()" onmouseout="affichernumerique3()" style="border:none;">
 
 
 
@@ -94,6 +95,22 @@ function affichersignal2() {
 }
 function affichersignal3() {
   document.getElementById("canvsignal").style.border = "none";
+}
+
+//afficher informations experts numérique
+function affichernumerique() {
+  if (document.getElementById("numérique").style.display == "block") {
+      document.getElementById("numérique").style.display = "none";
+  }
+  else {
+      document.getElementById("numérique").style.display = "block";
+  }
+}
+function affichernumerique2() {
+  document.getElementById("canvnum").style.border = "1px solid black";
+}
+function affichernumerique3() {
+  document.getElementById("canvnum").style.border = "none";
 }
 
 </script>
