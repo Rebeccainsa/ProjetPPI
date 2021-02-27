@@ -16,8 +16,6 @@
 		présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront."</p>
 		 
 
-		
-		<p id="toxico" style="display:none"> "expert en toxicologie" </p>
 
 		<canvas id="canvtrace" width="200" height="100" onclick="affichertrace()" onmouseover="affichertrace2()" onmouseout="affichertrace3()" style="border:none;"></canvas>
 		<canvas id="canvADN" width="200" height="100" onclick="afficheradn()" onmouseover="afficheradn2()" onmouseout="afficheradn3()" style="border:none;"></canvas>
@@ -28,7 +26,8 @@
 		<canvas id="canvballe" width="200" height="100" onclick="afficherballe()" onmouseover="afficherballe2()" onmouseout="afficherballe3()" style="border:none;"></canvas>
 		<canvas id="canvtoxico" width="200" height="100" onclick="affichertoxico()" onmouseover="affichertoxico2()" onmouseout="affichertoxico3()" style="border:none;"></canvas>
 
-		<div id="trace" width="500" height="500"> 
+		<div id="trace" width="500" height="500">
+		    <img id="fermertrace" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichertrace()"  > 
 			<p>
 				<strong>1.	Expert en empreinte (biologie génétique)</strong>
 				<br> <em>a.	Types de traces </em>
@@ -39,7 +38,7 @@
 				<br> Ces traces visibles à l’œil nu sont qualifiées de positives s’il s’agit d’un dépôt de matière ou négative s’il s’agit d’un enlèvement de matière (dans la poussière par exemple).  Ces traces sont photographiées sous des éclairages adaptés. 
 				<br>
 				<br>ii	Traces invisibles 
-				<br>Ceci est le résultat d’un dépôt de composés présents dans les crêtes papillaires (sueur par exemple). Dans la plupart des cas il faut utiliser une méthode d’identification spécifique que nous allons détailler dans la partie ….. « mettre un lien »
+				<br>Ceci est le résultat d’un dépôt de composés présents dans les crêtes papillaires (sueur par exemple). Dans la plupart des cas il faut utiliser une méthode d’identification spécifique que nous allons détailler dans la partie <a href="#révélation" >    "procédé révélation". </a>
 				<br>
 				<br>iii.	Traces moulues 
 				<br>Ceux sont des traces en 3 dimensions visibles à l’œil nu (une trace dans de la cire de bougie par exemple). Leur révélation se fait par moulage. 
@@ -55,7 +54,7 @@
 				<br>-les glandes sébacées qui sécrètent en majorité du sébum qui est lui-même composé d’une grande variété de composés organiques (acide gras, cholestérol). 
 				<br>-les glandes apocrines dont la composition est encore mal définie car contaminée par les deux glandes précédentes.  
 				<br>
-				<br><em>c.	Procédés révélation </em>
+				<br><em> <p id= "revelation"> c.	Procédés révélation </em> </id> </p>
 				<br>
 				<br>Le choix des différents procédés que nous allons présenter dépend de plusieurs paramètres tel que l’ancienneté de la trace, le type, l’état du support…. 
 				<br>•	L’épiscopie coaxiale est une méthode optique non destructrice. Elle consiste en mettre en évidence les contrastes de réflexions de la traces avec le support. En effet la trace est le support n’ont pas le même type de réflexion. Le support émet une réflexion spéculaire. Ce type de réflexion émet un faisceau de lumière unique sombre alors que la trace émet une réflexion diffusive soit plusieurs faisceau clairs.  Ainsi ce procédé est utilisé avec des surfaces lisses et réfléchissantes (miroir par exemple). 
@@ -67,18 +66,12 @@
 			</p>
 		</div>
 
-		<div id="ADN" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;"> 
+		<div id="ADN" width="500" height="500" > 
+			 <img id="fermerADN" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="afficheradn()"  >
 		    <p> <strong>	2. Expert ADN (département biologique génétique)</strong> 
 		    	<br>
 	<br>L’étude de l’ADN est cruciale dans la résolution de nombreuses affaires criminelles car elle permet de dresser un profil génétique et ainsi d’identifier les acteurs dans une affaires policières de façon précise, fiable et rapide. L’avantage avec l’ADN est qu’il est présent partout : dans le sperme, les cheveux, la peau… Il est donc facile de laisser son ADN sur une scène de crime. La police scientifique doit donc trouver ces indices pour ensuite l’analyser à l’aide de différentes étapes qui sont détaillées dans les parties suivantes. (lien)
+	<br> 
 		<em><br>a.PCR</em> 
 	<br>La découverte de ce procédé par Kary Mullis (lien page wikipedia ?) a très largement révolutionné le monde de la génétique et par la même occasion a permis de résoudre de nombreuses affaires criminelles. Cette technique permet la multiplication en grande quantité d’une petite fraction d’ADN. (est ce que j’explique la méthode ? ). 
 	Par ailleurs la principale difficulté à contourner pour cette méthode est d’éviter toute forme de contamination de l’ADN. C’est pourquoi les techniciens de police scientifiques qui effectuent les prélèvements doivent porter une blouse de protection pour éviter toute contamination. Aujourd’hui encore, de nombreux projets sont menés pour tenter de pallier à ce problème. 
@@ -101,15 +94,8 @@
 
 	</div> 
 
-	<div id="véhicule" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;">
+	<div id="véhicule" width="500" height="500" >
+		 <img id="fermervéhicule" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichervehicule()"  >
 <p> <strong> 3. Les experts véhicules </strong>
 	<br> 
 	Les principales missions de l’expert en véhicule sont l’identification d’automobile ou l’analyse d’accident. Il existe des méthodes propres à l’identification de véhicules et à l’études de débris. 
@@ -130,40 +116,26 @@ En l’absence de marque, l’analyse des débris permet le même résultat. Ces
 </p>
 </div>
 
-<div id="signal" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;">
-
+<div id="signal" width="500" height="500" >
+ <img id="fermersignal" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichersignal()"  >
 		    <p> <strong> 4. Traitement d’image signal et parole </strong>
 		    	<br> 
 		    	<br> <em> a.	Analyse de son </em>
-		    	<br>
+
 <br>L’analyse de son consiste principalement en l’identification de voix ce qui est particulièrement utile lors de prise d’otage par exemple. La voix est influencée par la corpulence d’une personne, son sexe et bien d’autres caractéristiques. Elle est donc considéré comme unique pour chaque individu comme l’ADN mais est beaucoup plus compliqué à analyser. 
 Du fait de la qualité de certains enregistrements, l’utilisation de filtrage sélectifs permet l’élimination de bruits parasites.  
 <br>
 <br> <em> b.	Analyse d’image </em>
 <br>Grace à des logiciels de traitement de l’image, les experts ont recours à une « amplification » soit à une amélioration de la qualité de l’image pour une meilleure identification. Nous pouvons par exemple rendre une image plus nettes ou éliminer des parasites visuels. Les experts peuvent donc ensuite procéder à la phase d’identification. Ceci consiste, toujours à l’aide de logiciels de traitement de l’image, à déterminer de nombreuses informations. Entre autre nous pouvons déterminer si la vidéo a été manipulée, la date du saisi, la taille réelle d’objets ou de personnes… 
-<br> <em>c.	Sources des saisies </em>
 <br>
+<br> <em>c.	Sources des saisies </em>
+
 <br>Les sources d’images et de signaux sonores sont multiples. Il peut s’agir par exemple d’une vidéo ou enregistrement amateur sur un portable. Il peut s’agir de l’étude d’une boîte noir suite à un accident aéronautique ou de caméras et/ou micros de surveillance.  Du fait de cette variabilité des sources, les experts en analyse de signal ont recours à un grand nombre de méthodes, de matériel et de logiciel de lecture.  
 </p>
 </div>
 
-<div id="numérique" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;">
+<div id="numérique" width="500" height="500" >
+	 <img id="fermernum" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichernumerique()"  >
 <p><br> <strong> 5.	Traitement numérique </strong>
   <br>Ce département analyse les différents supports numérique. Cela peut être par exemple les disques durs. Ce département est lui-même divisé en différents domaines d’expertise soit : l’extraction de donné, le traitement d’information, les réseaux et télécommunication et le soutient opérationnel.  Ce dernier s’assure du suivi de la communauté des enquêteurs en technologie numérique et de l’organisation des assistances à perquisition. 
   <br>
@@ -178,16 +150,8 @@ Du fait de la qualité de certains enregistrements, l’utilisation de filtrage 
 </p>
 </div>
  
-<div id="ballistique" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;">
-
+<div id="ballistique" width="500" height="500">
+ <img id="fermerballe" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="afficherballe()"  >
 <p> <strong> 6. Experts ballisitque </strong>
 	<br>
 	<br> Les experts en balistique ont pour mission l’identification d’armes et de munitions mais aussi l’étude des problèmes de balistiques. Cette dernière activité peut se découper en plusieurs groupes soit la balistique intérieur (ce qui se passe dans l’arme), extérieur (relatif aux corps lancés dans l’espace) et la balistique terminale (l’effet de l’impact des munitions). 
@@ -198,16 +162,8 @@ Du fait de la qualité de certains enregistrements, l’utilisation de filtrage 
 </p>
 </div>
 
-<div id="manuscrit" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;">
-
+<div id="manuscrit" width="500" height="500">
+ <img id="fermerman" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichermanuscrit()"  >
 		    <p> <strong> 7. Experts en traitement d'écriture ou experts manuscrit </strong> 
 		    	<br>
 <br>Il s’agit du département spécialisé dans l’analyse de document qui peuvent être des chèques, lettres, factures ou encore des titres d’identité. 
@@ -217,16 +173,8 @@ La plupart des documents analysés sont des documents papiers ou polymères. La 
 </p>
 </div>
 
-<div id="toxicologie" width="500" height="500" 
-		style="background-color:white;
-		    position: absolute; 
-		    top: 15%; left: 15%;
-		    width: 70%;
-		    height: 70%;
-		    opacity: 0.8;
-		    display: none;
-		    overflow:auto;">
-			
+<div id="toxicologie" width="500" height="500" >
+			 <img id="fermertoxico" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichertoxico()"  >
 				<p> <strong> 8. Experts en toxicologie </strong> 
 					<br>
 				<br>La toxicologie peut être appelée dans des affaires impliquant un décès suspect, une consommation de substance ou l’analyse de saisie de substance illicite. Pour se faire, le département utilise des outils analytiques performants régulièrement améliorés. 

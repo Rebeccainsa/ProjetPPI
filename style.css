@@ -1,11 +1,101 @@
-#trace 
+	#trace 
+	{
+		background-color: rgb(255, 204, 204);
+	    position: absolute; 
+	    top: 15%; left: 15%;
+	    width: 70%;
+	    height: 70%;
+	    opacity: 0.8;
+	    display: none;
+	    overflow:auto;
+	}
+
+	#ADN 
+	{
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+
+	#véhicule 
+	{
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+
+	#signal
+	{
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+
+
+#numérique 
 {
-	background-color: white;
-    position: absolute; 
-    top: 15%; left: 15%;
-    width: 70%;
-    height: 70%;
-    opacity: 0.8;
-    display: none;
-    overflow:auto;
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+
+	#ballistique 
+	{
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+
+#manuscrit 
+{
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+#toxicologie 
+{
+				background-color:white;
+			    position: absolute; 
+			    top: 15%; left: 15%;
+			    width: 70%;
+			    height: 70%;
+			    opacity: 0.8;
+			    display: none;
+			    overflow:auto;
+	}
+
+.fermer
+{
+	float:right; 
+	width:5%; 
 }
