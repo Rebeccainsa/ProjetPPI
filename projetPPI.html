@@ -8,23 +8,26 @@
 	<body> 
 		<h1 id="titre-principal"> "Les différentes spécialités de la police scientifique" </h1> 
 
-		<p id=introduction> "La police scientifique est une branche de la gendarmerie et de la police nationale composée de scientifiques. 
-		Leur objectif est d'aider les enquêteurs dans leurs affaires en analysant les preuves laissées sur les scènes de crimes." </p>
-		<p id="objectif-du-site"> "Ce site a pour objectif de vous faire découvrir les différentes activités de cette profession 
-		au travers des nombreuses spécialités. " </p> 
+		<p id=introduction> La police scientifique est une branche de la gendarmerie et de la police nationale composée de scientifiques. 
+		Leur objectif est d'aider les enquêteurs dans leurs affaires en analysant les preuves laissées sur les scènes de crimes. </p>
+		<p id="objectif-du-site"> Ce site a pour objectif de vous faire découvrir les différentes activités de cette profession 
+		au travers des nombreuses spécialités.  </p> 
 		<p id="présentation-concept"> Une scène de crime est représentée sur l'image ci-dessous. C'est à vous de repérer les différents indices 
-		présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront."</p>
+		présents. Cliquez dessus et différentes fenêtres avec une présentation pour chaque spécialité apparaîtront.</p>
 		 
+		<div id="main">
+			<canvas id="canvtrace" width="200" height="100" onclick="affichertrace()" onmouseover="affichertrace2()" onmouseout="affichertrace3()"></canvas>
+			<canvas id="canvADN" onclick="afficheradn()" onmouseover="afficheradn2()" onmouseout="afficheradn3()"></canvas>
+			<canvas id="canvvehicule" width="200" height="100" onclick="affichervehicule()" onmouseover="affichervehicule2()" onmouseout="affichervehicule3()"></canvas>
+			<canvas id="canvsignal" width="200" height="100" onclick="affichersignal()" onmouseover="affichersignal2()" onmouseout="affichersignal3()"></canvas>
+			<canvas id="canvnum" width="200" height="100" onclick="affichernumerique()" onmouseover="affichernumerique2()" onmouseout="affichernumerique3()"></canvas>
+			<canvas id="canvman" width="200" height="100" onclick="affichermanuscrit()" onmouseover="affichermanuscrit2()" onmouseout="affichermanuscrit3()"></canvas>
+			<canvas id="canvballe" width="200" height="100" onclick="afficherballe()" onmouseover="afficherballe2()" onmouseout="afficherballe3()"></canvas>
+			<canvas id="canvtoxico" width="200" height="100" onclick="affichertoxico()" onmouseover="affichertoxico2()" onmouseout="affichertoxico3()"></canvas>
+		
+		
 
-
-		<canvas id="canvtrace" width="200" height="100" onclick="affichertrace()" onmouseover="affichertrace2()" onmouseout="affichertrace3()" style="border:none;"></canvas>
-		<canvas id="canvADN" width="200" height="100" onclick="afficheradn()" onmouseover="afficheradn2()" onmouseout="afficheradn3()" style="border:none;"></canvas>
-		<canvas id="canvvehicule" width="200" height="100" onclick="affichervehicule()" onmouseover="affichervehicule2()" onmouseout="affichervehicule3()" style="border:none;"></canvas>
-		<canvas id="canvsignal" width="200" height="100" onclick="affichersignal()" onmouseover="affichersignal2()" onmouseout="affichersignal3()" style="border:none;"></canvas>
-		<canvas id="canvnum" width="200" height="100" onclick="affichernumerique()" onmouseover="affichernumerique2()" onmouseout="affichernumerique3()" style="border:none;"></canvas>
-		<canvas id="canvman" width="200" height="100" onclick="affichermanuscrit()" onmouseover="affichermanuscrit2()" onmouseout="affichermanuscrit3()" style="border:none;"></canvas>
-		<canvas id="canvballe" width="200" height="100" onclick="afficherballe()" onmouseover="afficherballe2()" onmouseout="afficherballe3()" style="border:none;"></canvas>
-		<canvas id="canvtoxico" width="200" height="100" onclick="affichertoxico()" onmouseover="affichertoxico2()" onmouseout="affichertoxico3()" style="border:none;"></canvas>
+		</div>
 
 		<div id="trace" width="500" height="500">
 		    <img id="fermertrace" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichertrace()"  > 
@@ -60,8 +63,8 @@
 				<p><br>
 				<br>Le choix des différents procédés que nous allons présenter dépend de plusieurs paramètres tel que l’ancienneté de la trace, le type, l’état du support…. 
 				<br>•	L’épiscopie coaxiale est une méthode optique non destructrice. Elle consiste en mettre en évidence les contrastes de réflexions de la traces avec le support. En effet la trace est le support n’ont pas le même type de réflexion. Le support émet une réflexion spéculaire. Ce type de réflexion émet un faisceau de lumière unique sombre alors que la trace émet une réflexion diffusive soit plusieurs faisceau clairs.  Ainsi ce procédé est utilisé avec des surfaces lisses et réfléchissantes (miroir par exemple). 
-				« schéma ou photo de la trace où on voit le clair et le foncé ». 
-				<br>•	Les vapeurs de cyanoacrylates est un procédé de surface lisse est sèche. En premier lieu nous obtenons des vapeurs à partir d’ester de cyanoacrylates (une image ? ) qui ensuite forme un solide blanc. Ainsi la trace peut apparaître. Cette technique est très largement utilisée car bon marché, sensible et facile. 
+				<img src="empreintenoirblanc.jpg" >
+				<br>•	Les vapeurs de cyanoacrylates est un procédé de surface lisse est sèche. En premier lieu nous obtenons des vapeurs à partir d’ester de cyanoacrylates qui ensuite forme un solide blanc. Ainsi la trace peut apparaître. Cette technique est très largement utilisée car bon marché, sensible et facile. 
 				<br>•	La suspension de microparticules est une méthode très puissante car elle permet de mettre en évidence des traces sur des surfaces qui ont été mouillés ou passés sous l’eau. Il s’agit de saupoudrer la zone avec une poudre qui réagit avec les composés insolubles dans l’eau (ce qui est le cas de nombreux composés sécrétés par les glandes capillaires).  Cependant cette méthode est destructrice (perte des traces) et montre une efficacité limité. 
 				<br>•	La poudre colorée est une méthode encore une fois très largement employée car facile et bon marché. Il existe différents types de poudres (luminescentes, de différentes couleurs) qui réagit cette fois ci avec l’eau, très largement sécrétée par les traces papillaires.  Cette méthode est par ailleurs limitante car fonctionnel avec un nombre de surface très limité et non compatible avec une recherche d’ADN ultérieure. 
 				<br>•	Il existe encore de nombreuses techniques tel que le bain de ninhydrine, le révélateur physique ou encore les vapeurs d’iode.  
@@ -70,12 +73,12 @@
 
 		<div id="ADN" width="500" height="500" > 
 			 <img id="fermerADN" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="afficheradn()"  >
-		    <h2> <strong>	2. Expert ADN (département biologique génétique)</strong> </h2>
+		    <h2> <strong>	2. Expert ADN </strong> </h2>
 		    	<p><br>
-	<br>L’étude de l’ADN est cruciale dans la résolution de nombreuses affaires criminelles car elle permet de dresser un profil génétique et ainsi d’identifier les acteurs dans une affaires policières de façon précise, fiable et rapide. L’avantage avec l’ADN est qu’il est présent partout : dans le sperme, les cheveux, la peau… Il est donc facile de laisser son ADN sur une scène de crime. La police scientifique doit donc trouver ces indices pour ensuite l’analyser à l’aide de différentes étapes qui sont détaillées dans les parties suivantes. (lien)
+	<br>L’étude de l’ADN est cruciale dans la résolution de nombreuses affaires criminelles car elle permet de dresser un profil génétique et ainsi d’identifier les acteurs dans une affaires policières de façon précise, fiable et rapide. L’avantage avec l’ADN est qu’il est présent partout : dans le sperme, les cheveux, la peau… Il est donc facile de laisser son ADN sur une scène de crime. La police scientifique doit donc trouver ces indices pour ensuite l’analyser à l’aide de différentes étapes qui sont détaillées dans les parties suivantes. 
 	<br> </p>
 		<h3><em><br>a.PCR</em> </h3>
-	<p><br>La découverte de ce procédé par Kary Mullis (lien page wikipedia ?) a très largement révolutionné le monde de la génétique et par la même occasion a permis de résoudre de nombreuses affaires criminelles. Cette technique permet la multiplication en grande quantité d’une petite fraction d’ADN. (est ce que j’explique la méthode ? ). 
+	<p><br>La découverte de ce procédé par Kary Mullis  a très largement révolutionné le monde de la génétique et par la même occasion a permis de résoudre de nombreuses affaires criminelles. Cette technique permet la multiplication en grande quantité d’une petite fraction d’ADN. 
 	Par ailleurs la principale difficulté à contourner pour cette méthode est d’éviter toute forme de contamination de l’ADN. C’est pourquoi les techniciens de police scientifiques qui effectuent les prélèvements doivent porter une blouse de protection pour éviter toute contamination. Aujourd’hui encore, de nombreux projets sont menés pour tenter de pallier à ce problème. 
 	<br></p>
 		<h3><em><br>b.Electrophorèse</em> </h3>
@@ -86,13 +89,14 @@
 	<br></p>
 		<h3><em><br>d.Identification ADN</em> </h3>
 	<p><br>Une fois le profil obtenu il faut pouvoir comparer ce dernier avec une trace.  Pour se faire il faut procéder à une méthode de calcul basée sur les statistiques. Par ailleurs même si les deux profils concordent on ne peut procéder à une identification formelle. En effet le profil d’ADN obtenu peut être partagé par une partie de la population. Il faut donc étudier la fréquence du profil d’ADN obtenu au sein de la population (chiffres répertoriés et régulièrement mis à jours par différents centre de recherches). Si un profil a une faible fréquence, nous serons plus aptes à valider l’identification. 
-	Le théorème utilisé pour l’approche statistique est l’approche Bayésienne.  Ce calcul dépend des indices matériels recueillis mais aussi l’information analytique de l’expert et des informations recueillis au court de l’enquête. Le calcul est le suivant : 
-	P(H_p/I)/P(H_d/I) *P(〖E/(H_P,I)〗_ )/P(E/H_d ,I) =P(H_P/(E,I))/P(H_d/(E,I)) .  
-	I : informations générales sur l’affaire (circonstances)
-	E : évidences (concordances entre une trace et le matériel de comparaison)
-	HP : hypothèse selon la quelle le suspect est à l’origine de la trace d’ADN
-	Hd : hypothèse selon laquelle une tiers personne est à l’origine de la trace d’ADN
-	Pour plus d’informations sur ce calcul vous pouvez cliquer ici. </p>
+	Le théorème utilisé pour l’approche statistique est l’approche Bayésienne.  Ce calcul dépend des indices matériels recueillis mais aussi l’information analytique de l’expert et des informations recueillis durant l’enquête. Le calcul est le suivant : 
+	
+	<br><img src="formule.jpg">
+	<br>I : informations générales sur l’affaire (circonstances)
+	<br>E : évidences (concordances entre une trace et le matériel de comparaison)
+	<br>HP : hypothèse selon la quelle le suspect est à l’origine de la trace d’ADN
+	<br>Hd : hypothèse selon laquelle une tiers personne est à l’origine de la trace d’ADN
+	 </p>
 
 	</div> 
 
@@ -120,7 +124,7 @@ En l’absence de marque, l’analyse des débris permet le même résultat. Ces
 
 <div id="signal" width="500" height="500" >
  <img id="fermersignal" class="fermer" src="https://icon-icons.com/icons2/183/PNG/256/Windows_Close_Program_22531.png" onclick="affichersignal()"  >
-		    <h2> <strong> 4. Traitement d’image signal et parole </strong></h2>
+		    <h2> <strong> 4.  Traitement d’image signal et parole </strong></h2>
 		    	<p><br> </p>
 		    	<h3><br> <em> a.	Analyse de son </em></h3>
 

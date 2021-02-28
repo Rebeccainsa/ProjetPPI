@@ -1,100 +1,175 @@
+body 
+{
+	background-image: url("fond.jpg");
+	background-repeat: no-repeat; 
+	background-size:cover;
+	background-position: center;
+}
+#dessin 
+{
+	position:relative;
+	z-index:1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+canvas 
+{
+	position:absolute; 
+	z-index:2;
+	background-color: transparent;
+	border: none;
+}
+
+#titre-principal
+{
+	font-family: Marker Felt, fantasy; 
+	font-size: 100; 
+	text-align: center; 
+}
+
+#introduction 
+{
+	font-family: FreeMono, monospace; 
+	text-align: center;
+} 
+#objectif-du-site
+{
+	font-family: FreeMono, monospace; 
+	text-align: center;
+} 
+#présentation-concept 
+{
+	font-family: FreeMono, monospace; 
+	text-align: center;
+} 
 
 
-	#trace 
-	{
-		background-color: white;
-	    position: absolute; 
-	    top: 15%; left: 15%;
-	    width: 70%;
-	    height: 70%;
-	    opacity: 0.8;
-	    display: none;
-	    overflow:auto;
-	}
+ #main
+{
+	position: relative;
+	background-image:url("crime.jpg");
+	background-size:cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 75%;
+	height: 100%;
+}
 
-	#ADN 
-	{
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+#trace 
+{
+	background-color: white;
+    position: fixed; 
+    top: 15%; left: 15%;
+    width: 70%;
+    height: 70%;
+    opacity: 0.8;
+    display: none;
+    overflow:auto;
+    z-index:3;
+    text-align: center;
+}
 
-	#véhicule 
-	{
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+#ADN 
+{
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}
 
-	#signal
-	{
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+#véhicule 
+{
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}
+
+#signal
+{
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}
 
 
 #numérique 
 {
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}
 
-	#ballistique 
-	{
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+#ballistique 
+{
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}
 
 #manuscrit 
 {
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}
 #toxicologie 
 {
-				background-color:white;
-			    position: absolute; 
-			    top: 15%; left: 15%;
-			    width: 70%;
-			    height: 70%;
-			    opacity: 0.8;
-			    display: none;
-			    overflow:auto;
-	}
+			background-color:white;
+		    position: fixed; 
+		    top: 15%; left: 15%;
+		    width: 70%;
+		    height: 70%;
+		    opacity: 0.8;
+		    display: none;
+		    overflow:auto;
+		    z-index:3;
+		    text-align: center;
+}	
 
 .fermer
 {
@@ -102,4 +177,74 @@
 	width:5%; 
 }
 
-body 
+
+#canvtrace
+{
+	float:right;
+	right:0%;
+	top:78%;
+}
+
+#canvADN
+{
+	float: right;
+	right: 8%;
+	top: 35%;
+	width: 10%; 
+	height: 20%;
+}
+
+#canvvehicule 
+{
+	float:left;
+	left:12%;
+	bottom: 0%;
+	width: 10%;
+	height: 20%; 
+}
+
+#canvsignal 
+{
+	float:left;
+	left:5%;
+	top:2%;
+	width: 10%;
+}
+#canvnum
+{
+	float:left;
+	left:20%;
+	top:10%;
+}
+
+#canvman
+{
+	float:right;
+	right:35%;
+	bottom: 7%;
+}
+#canvballe 
+{
+	float:right;
+	right:25%;
+	bottom: 30%;
+	width: 15%;
+}
+#canvtoxico 
+{
+	float:left;
+	left: :5%;
+	bottom: 40%;
+	width: 15%;
+}
+h2
+{
+	font-family:Marker Felt, fantasy; 
+	font-size: 60;
+}
+
+h3
+{
+	font-family:Marker Felt, fantasy; 
+	font-size: 40;	
+}

@@ -140,11 +140,11 @@ function afficherballe3() {
 
 //afficher informations experts toxicologie 
 function affichertoxico() {
-  if (document.getElementById("toxico").style.display == "block") {
-      document.getElementById("toxico").style.display = "none";
+  if (document.getElementById("toxicologie").style.display == "block") {
+      document.getElementById("toxicologie").style.display = "none";
   }
   else {
-      document.getElementById("toxico").style.display = "block";
+      document.getElementById("toxicologie").style.display = "block";
   }
 }
 
