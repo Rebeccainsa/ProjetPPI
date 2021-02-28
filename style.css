@@ -1,6 +1,8 @@
+
+
 	#trace 
 	{
-		background-color: rgb(255, 204, 204);
+		background-color: white;
 	    position: absolute; 
 	    top: 15%; left: 15%;
 	    width: 70%;
@@ -99,3 +101,5 @@
 	float:right; 
 	width:5%; 
 }
+
+body 
